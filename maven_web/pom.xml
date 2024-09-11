@@ -11,12 +11,39 @@
 
 
     <dependencies>
+        <!--<dependency>-->
+        <!--<groupId>com.lemon.maven</groupId>-->
+        <!--<artifactId>maven_java</artifactId>-->
+        <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
+
         <dependency>
-            <groupId>com.lemon.maven</groupId>
-            <artifactId>maven_java</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.8</version>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
     </dependencies>
+
+    <build>
+        <!-- 自定义打包名称 -->
+        <finalName>maven_web-1.0</finalName>
+    </build>
 
 
 </project>
