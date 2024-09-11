@@ -43,6 +43,19 @@
     <build>
         <!-- 自定义打包名称 -->
         <finalName>maven_web-1.0</finalName>
+
+        <!-- 设置要打包的资源位置 -->
+        <resources>
+            <resource>
+                <!-- 设置资源所在目录 -->
+                <directory>src/main/java</directory>
+                <includes>
+                    <!-- 设置包含的资源类型 -->
+                    <!-- **/*代表任意目录线的任意xml文件 -->
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 
